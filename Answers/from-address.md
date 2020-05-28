@@ -4,7 +4,7 @@
 
 When a company sets up a domain like “adobe.com” there are DNS records that point all calls to adobe.com at one or more server IP addresses on the internet. There are also DNS records for email that point to the email server/s for that domain.
 
-**If we sent out emails from our echosign/Adobe Sign servers but added a “from” with an email domain that did NOT match those DNS records, the email domain in the email from would not resolve back to that domain’s email servers and the receiving email server would think that this was spam since this is a common way to try to “trick” people into thinking they got an email from a “known good” sender.**
+**If we sent out emails from our echosign/Adobe Sign servers but added a “from” with an email domain that did NOT match those DNS records, the email domain in the email "from" would not resolve back to that domain’s email servers and the receiving email server would think that this was spam since this is a common way to try to “trick” people into thinking they got an email from a “known good” sender.**
 
  If customers want to use emails from Adobe to drive signing as well as reminders etc. we really can’t change the from address because all the emails for that account where we changed the “from” address would then get caught in the “spam/phishing” filters and recipient emails would not go through.
 
