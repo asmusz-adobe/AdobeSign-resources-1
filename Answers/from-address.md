@@ -8,7 +8,7 @@ When a company sets up a domain like “adobe.com” there are DNS records that 
 
  If customers want to use emails from Adobe to drive signing as well as reminders etc. we really can’t change the from address because all the emails for that account where we changed the “from” address would then get caught in the “spam/phishing” filters and recipient emails would not go through.
 
-### Possible but complicated "work-around"
+### Possible but complicated/high "level of effort" work-around
 
 The only “work-around” to this issue is to suppress ALL the emails usually sent by our systems (API based or Account/Group/User Settings based) and then configure a way for the info about the sent agreements to be sent to some servers belonging to the customer. Those servers could use the agreement IDs to get the “signing URL” (via an API call or custom workflow action) for the created agreements and send emails from their own email servers that included the "action" links. The customers systems would have to do the same for reminders and any other communications that typically come from our servers by default. This usually requires at least a lot of management using something like MS Flow/Power-Automate or if that’s not available a significant amount of custom development.
 
